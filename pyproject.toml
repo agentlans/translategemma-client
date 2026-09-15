@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "translategemma-client"
+version = "0.1.0"
+description = "An optimized wrapper class for TranslateGemma using llama-cpp-python supporting sync and async operations."
+readme = "README.md"
+authors = [
+    { name = "Alan Tseng", email = "langesant@outlook.com" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "llama-cpp-python>=0.2.90",
+    "typing-extensions>=4.0.0; python_version < '3.11'",
+]
+
+[project.urls]
+Homepage = "https://github.com/agentlans/translategemma-client"
