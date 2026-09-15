@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ### 1. Synchronous Usage
 
 ```python
-from client import TranslateGemmaClient
+from translategemma_client import TranslateGemmaClient
 
 # Initialize the client with your GGUF model and mmproj paths
 with TranslateGemmaClient(
@@ -68,7 +68,7 @@ with TranslateGemmaClient(
 
 ```python
 import asyncio
-from client import TranslateGemmaClient
+from translategemma_client import TranslateGemmaClient
 
 async def main():
     client = TranslateGemmaClient(
